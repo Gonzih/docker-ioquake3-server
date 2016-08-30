@@ -1,8 +1,8 @@
-# IOQuake3 server in docker
+# ioQuake3 (with OSP Tourney) server in docker
 
 ## Building
 
-* Copy pak0.pk3 to baseq3 directory
+* Copy `pak0.pk3` from original game distribution to the `baseq3` directory
 * Run `docker build -t q3-server .`
 
 ## Running
