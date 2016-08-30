@@ -21,4 +21,6 @@ ADD server.cfg /opt/quake3/baseq3/server.cfg
 
 USER root
 
+EXPOSE 27960
+
 CMD ["/opt/quake3/ioq3ded", "+set", "dedicated", "2", "+set", "sv_allowDownload", "1", "+set", "sv_dlURL", "", "+set", "com_hunkmegs", "64", "+exec", "server.cfg"]

@@ -6,4 +6,4 @@
 * Run `docker build -t q3-server .`
 
 ## Running
-* Run `docker run --net=host q3-server`
+* Run `docker run -p 27960:27960/udp q3-server`
