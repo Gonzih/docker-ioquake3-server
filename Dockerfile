@@ -17,7 +17,8 @@ RUN git clone https://aur.archlinux.org/ioquake3-git.git /tmp/ioquake3
 RUN cd /tmp/ioquake3 && makepkg -si --noconfirm
 
 ADD baseq3/pak0.pk3 /opt/quake3/baseq3/pak0.pk3
+ADD server.cfg /opt/quake3/baseq3/server.cfg
 
 USER root
 
-CMD ["/opt/quake3/ioq3ded", "+set", "dedicated", "2", "+set", "sv_allowDownload", "1", "+set", "sv_dlURL", "", "+set", "com_hunkmegs", "64"]
+CMD ["/opt/quake3/ioq3ded", "+set", "dedicated", "2", "+set", "sv_allowDownload", "1", "+set", "sv_dlURL", "", "+set", "com_hunkmegs", "64", "+exec", "server.cfg"]
