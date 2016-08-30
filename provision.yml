@@ -1,0 +1,16 @@
+- name: Deploy q3 servers
+  hosts: q3-servers
+  tasks:
+    - git: repo=https://github.com/Gonzih/docker-ioquake3-server.git dest=/tmp/q3-server
+    - copy: src=/opt/quake3/baseq3/pak0.pk3 dest=/tmp/q3-server/baseq3
+    - name: Build image
+      docker_image:
+        name: q3-server
+        force: yes
+        path: /tmp/q3-server
+    - name: Run server
+      docker:
+        name: q3-server
+        image: q3-server
+        state: reloaded
+        net: host
