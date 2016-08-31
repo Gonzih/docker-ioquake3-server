@@ -1,4 +1,5 @@
 [![ioquake3.org](https://ioquake3.org/wp/wp-content/themes/ioq3-deboy/ioq3.png)](https://ioquake3.org/)
+[![OSP Tourney Q3A](http://www.orangesmoothie.org/graphix/homebtn.gif)](http://www.orangesmoothie.org/tourneyQ3A/)
 
 # ioQuake3 (with OSP Tourney) server in docker
 
