@@ -1,4 +1,4 @@
-![ioquake3.org](https://ioquake3.org/wp/wp-content/themes/ioq3-deboy/ioq3.png)
+[![ioquake3.org](https://ioquake3.org/wp/wp-content/themes/ioq3-deboy/ioq3.png)](https://ioquake3.org/)
 
 # ioQuake3 (with OSP Tourney) server in docker
 
