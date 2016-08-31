@@ -12,6 +12,6 @@
 * Run `docker run -p 27960:27960/udp q3-server`
 
 ## Deploying via ansible
-* By default it will search for `pak0.pk3` file in `./baseq3/` directory
+* By default ansible will search for `pak0.pk3` file in `./baseq3/` directory on your local machine
 * Add servers to q3-servers group in ansible inventory file
 * Run `ansible-playbook provision.yml`
