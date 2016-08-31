@@ -2,7 +2,7 @@
   hosts: q3-servers
   tasks:
     - git: repo=https://github.com/Gonzih/docker-ioquake3-server.git dest=/tmp/q3-server
-    - copy: src=/opt/quake3/baseq3/pak0.pk3 dest=/tmp/q3-server/baseq3
+    - copy: src=./baseq3/pak0.pk3 dest=/tmp/q3-server/baseq3
     - name: Build image
       docker_image:
         name: q3-server
